@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+ 
+    
+</head>
+ 
+<style>
+ 
+    .box{
+        min-height: 60vh;
+        max-height: 60vh;
+        overflow-y: scroll;
+    }
+ 
+    .message{
+        max-width: 80%;
+    }
+ 
+    .user{
+        margin-left: auto;
+    }
+ 
+</style>
+ 
+<body>
+ 
+    <section class="section">
+        <h1 class="title">CSS Chatbot</h1>
+ 
+        <div class="box" id="messageBox">
+ 
+            <article class="message is-warning">
+                <div class="message-header">
+                    <p>AI</p>
+                </div>
+                <div class="message-body">
+                    This is what the AI says
+                </div>
+            </article>
+ 
+            <article class="message user is-success">
+                <div class="message-header">
+                    <p>USER</p>
+                </div>
+                <div class="message-body">
+                    This is what the USER says
+                </div>
+            </article>
+ 
+        </div>
+ 
+        <div>
+            <input type="text" name="userInput" id="userInput" class="input">
+            <button class="button is-primary is-fullwidth my-3" id="msgButton">SUBMIT</button>
+        </div>
+    </section>
+
+    <script src="scropt.js"></script>
+ 
+</body>
+</html>
+ 
